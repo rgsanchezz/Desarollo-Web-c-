@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con Validación en JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+
+    <form id="formulario">
+
+        <label>
+            Nombre:
+            <input type="text" id="nombre">
+            <small class="error" id="errorNombre"></small>
+        </label>
+
+        <label>
+            Correo electrónico:
+            <input type="email" id="correo">
+            <small class="error" id="errorCorreo"></small>
+        </label>
+
+        <label>
+            Contraseña:
+            <input type="password" id="password">
+            <small class="error" id="errorPassword"></small>
+        </label>
+
+        <label>
+            Confirmar contraseña:
+            <input type="password" id="confirmPassword">
+            <small class="error" id="errorConfirmPassword"></small>
+        </label>
+
+        <label>
+            Edad:
+            <input type="number" id="edad">
+            <small class="error" id="errorEdad"></small>
+        </label>
+
+        <div class="botones">
+            <button type="submit" id="btnEnviar" disabled>Enviar</button>
+            <button type="reset">Reiniciar</button>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
